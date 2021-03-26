@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Overpass", sans-serif; }
+
+body {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+
+button {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.link {
+  font-family: "Ubuntu", sans-serif;
+  color: #fafafa; }
+
+.main-header {
+  height: 100vh;
+  background: no-repeat center center/200% url(../../../images/bg-pattern-intro.svg), linear-gradient(to right, #ff8d72, #ff4457);
+  border-bottom-left-radius: 5rem; }
+
+.main-nav {
+  display: flex;
+  height: 30vh;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
+
+.nav-links,
+.nav-cta {
+  display: none; }
+
+@media screen and (min-width: 600px) {
+  .nav-links,
+  .nav-cta {
+    display: flex; } }
+
+.show-nav {
+  display: block; }
+
+.hero {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+  .hero .hero-text {
+    color: #fafafa; }
+    .hero .hero-text__paragraph {
+      margin: 2rem 0; }
+  .hero-cta {
+    display: flex; }
+  .hero-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 50rem;
+    background: transparent;
+    border: 1px solid #fafafa; }
+    .hero-btn a {
+      font-weight: bold; }
+  .hero-btn:active {
+    background: #fafafa; }
+  .hero-btn a:active {
+    color: #ff7b86; }
+  .hero-btn a:hover {
+    color: #ff7b86; }
+  .hero .cta-btn {
+    background: #fafafa;
+    border: none; }
+    .hero .cta-btn a {
+      color: #ff4457; }
+  .hero .cta-btn:active {
+    background: #ff7b86; }
+  .hero .cta-btn a:active {
+    color: #fafafa; }

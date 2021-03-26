@@ -1,0 +1,19 @@
+{
+  "name": "blogr-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev\" \"npm run watch:scss\" ",
+    "dev": "live-server",
+    "watch:scss": "node-sass -w ./style/scss -o ./style/css --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0"
+  }
+}

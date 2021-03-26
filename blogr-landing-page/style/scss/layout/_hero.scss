@@ -1,0 +1,57 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.hero {
+  @include container;
+  text-align: center;
+
+  & .hero-text {
+    color: $main-white;
+
+    &__paragraph {
+      margin: 2rem 0;
+    }
+  }
+  &-cta {
+    display: flex;
+  }
+
+  &-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 50rem;
+    background: transparent;
+    border: 1px solid $main-white;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  &-btn:active {
+    background: $main-white;
+  }
+
+  &-btn a:active {
+    color: $active-btn-color;
+  }
+  &-btn a:hover {
+    color: $active-btn-color;
+  }
+
+  .cta-btn {
+    background: $main-white;
+    border: none;
+
+    a {
+      color: $dark-pink;
+    }
+  }
+
+  .cta-btn:active {
+    background: $active-btn-color;
+  }
+
+  .cta-btn a:active {
+    color: $main-white;
+  }
+}
