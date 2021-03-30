@@ -1,0 +1,25 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+// FEATURE ARTICLE
+.feature-article {
+  justify-items: center;
+  @include container;
+
+  & .article-text {
+    order: 2;
+  }
+
+  & .article-img img {
+  }
+}
+
+// INFRASTRUCTURE ARTICLE
+
+.infrastructure-article {
+  //   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  border-radius: 0 10rem 0 10rem;
+  background: $article-background;
+  align-items: center;
+  position: relative;
+}

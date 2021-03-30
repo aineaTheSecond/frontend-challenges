@@ -1,0 +1,11 @@
+@import "../abstract/variables";
+
+section {
+  margin: $main-margin;
+
+  & .section-header {
+    text-align: center;
+    color: $main-font-color;
+    margin-bottom: 3rem;
+  }
+}

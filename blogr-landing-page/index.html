@@ -42,9 +42,9 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-nav container">
-        <a href="#"><img src="images/logo.svg" alt="" /></a>
+      <nav class="main-nav">
         <ul class="nav-links">
+          <a class="logo" href="#"><img src="images/logo.svg" alt="" /></a>
           <li class="nav-link">
             <a class="link" href="#">Product</a>
             <ul class="nav-link__items">
@@ -72,18 +72,23 @@
               <li class="nav-link__dropdown">LinkedIn</li>
             </ul>
           </li>
-          <div class="nav-cta">
-            <button class="nav-cta__link">
-              <a class="link" href="">Login</a>
-            </button>
-            <button class="nav-cta__link">
-              <a class="link" href="">Sign Up</a>
-            </button>
-          </div>
         </ul>
+        <div class="nav-cta">
+          <button class="nav-cta__link login">
+            <a class="link" href="">Login</a>
+          </button>
+          <button class="nav-cta__link signup">
+            <a class="link" href="">Sign Up</a>
+          </button>
+        </div>
 
         <div class="hambuger-menu">
-          <img src="./images/icon-hamburger.svg" alt="hambuger-menu" />
+          <span class="open">
+            <img src="./images/icon-hamburger.svg" alt="hambuger-menu" />
+          </span>
+          <span class="close">
+            <img class="hidden" src="./images/icon-close.svg" alt="close" />
+          </span>
         </div>
       </nav>
 
@@ -109,7 +114,7 @@
       <section>
         <h2 class="section-header">Designed for the future</h2>
 
-        <article>
+        <article class="feature-article">
           <div class="article-text">
             <!-- first text -->
             <h3 class="article-text__header">
@@ -133,11 +138,15 @@
               you’re in full control.
             </p>
           </div>
-          <div class="article-img"></div>
+          <div class="article-img">
+            <img src="./images/illustration-editor-desktop.svg" alt="editor" />
+          </div>
         </article>
 
-        <article>
-          <div class="article-img"></div>
+        <article class="infrastructure-article">
+          <div class="article-img">
+            <img src="./images/illustration-phones.svg" alt="" />
+          </div>
           <div class="article-text">
             <h3 class="article-text__header infrastructure">
               State of the Art Infrastructure
